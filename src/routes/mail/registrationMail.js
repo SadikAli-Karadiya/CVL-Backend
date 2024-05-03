@@ -13,7 +13,7 @@ const registrationMail = async ({ name, email, link }) => {
           <div style="width: 100%; background-color:black; padding: 20px 0">
             <a href=${process.env.DOMAIN} >
               <img
-                src="https://ik.imagekit.io/uz4hsgydu/Default/logo.png?updatedAt=1681908076921"
+                src=${process.env.LOGO}
                 style="width: 100%; height: 70px; object-fit: contain"
               />
             </a> 

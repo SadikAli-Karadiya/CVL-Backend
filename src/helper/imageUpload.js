@@ -2,13 +2,9 @@ const ImageKit = require("imagekit");
 const fs = require("fs");
 const ErrorHandler = require("../utils/ErrorHandler");
 
-const DefaultteamImage =
-  "https://ik.imagekit.io/uz4hsgydu/Default/basketball_team_logo_2.webp?updatedAt=1682664521906";
-
-const DefaultplayerImage =
-  "https://ik.imagekit.io/uz4hsgydu/Default/player-default-profile.webp?updatedAt=1682665010247";
-
-const tournamentDefaultImage = 'https://ik.imagekit.io/uz4hsgydu/Default/tournament_logo_2.webp?updatedAt=1681908076262'
+const DefaultteamImage = process.env.DEFAULT_TEAM_LOGO;
+const DefaultplayerImage = process.env.DEFAULT_PLAYER_LOGO;
+const tournamentDefaultImage = process.env.DEFAULT_TOURNAMENT_LOGO;
 
 const imagekit = new ImageKit({
   publicKey: process.env.IMAGEKIT_PUBLIC_KEY,
